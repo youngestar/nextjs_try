@@ -8,7 +8,7 @@ const dbURI = "mongodb://localhost:27017/simple";
 
 // 连接数据库
 mongoose
-  .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(dbURI)
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("Could not connect to MongoDB", err));
 
